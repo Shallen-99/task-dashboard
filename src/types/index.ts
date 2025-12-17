@@ -1,15 +1,25 @@
-export interface task {
-    id: string;
-    title: string;
-    description: string;
-    status: "pending" | "in-progress" | "completed";
-    dueDate?: string;
+export type TaskStatus = 'pending' | 'in-progress' | 'completed';
+export type TaskPriority = 'low' | 'medium' | 'high';
+
+export interface Task {
+  id: string;
+  title: string;
+  description?: string;
+  status: TaskStatus;
+  priority: TaskPriority;
+  dueDate?: string;
 }
 
 export interface TaskFormData {
-    title: string;
-    description?: string;
-    status: "pending" | "in-progress" | "completed";
-    priority: "low" | "medium" | "high";
-    searchQuery?: string;
+  title: string;
+  description?: string;
+  status: TaskStatus;
+  priority: TaskPriority;
+  dueDate?: string;
+}
+
+export interface TaskFilterOptions {
+  status?: TaskStatus;
+  priority?: TaskPriority;
+  searchQuery?: string;
 }
