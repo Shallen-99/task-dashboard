@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Task Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### A full-stack web application built as first project.
 
-Currently, two official plugins are available:
+## Description
+Task Dashboard: An application used for making a list of tasks you have to complete.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+* [Technologies Used](#technologiesused)
+* [Features](#features)
+* [Design](#design)
+* [Project Next Steps](#nextsteps)
+* [Deployed App](#deployment)
+* [About the Author](#author)
 
-## React Compiler
+## <a name="technologiesused"></a>Technologies Used
+* JavaScript
+* HTML
+* CSS
+* React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Features
+Create tasks.
+Users can delete tasks after completing them.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Whiteboard Images
+*can be found in project Images folder
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Trello Planning
+*N/A
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## <a name="design"></a>Design
+* Design elements implemented using HTML5 and CSS3. 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## <a name="nextsteps"></a>Project Next Steps
+* Allow the user to attach to their calendar. 
+* Users can change the theme.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## <a name="deployment"></a>Deployed Link
+[Netlify](https://task-dashboard4.netlify.app/)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* You can view the repository:
+[Github.com](https://github.com/Shallen-99/task-dashboard.git)
+* If unable to view please go live locally through VS Code
+
+## <a name="author"></a>About The Author
+I build applications and mini projects tied to my various interests. I look for creative solutions to real world problems and think of technical ways to address them. While no application is ever perfect I find joy in the process and all my final products!
+    
+## Works Cited:
+
+## Reflection: 
+Building this Task Management Dashboard reinforced key React and TypeScript principles, including component modularity, strong typing, and efficient state
+management. The challenges encountered, particularly around TypeScript module resolution, performance optimization, and unique ID management, strengthened
+my problem-solving skills and highlighted best practices for building scalable, maintainable React applications.
